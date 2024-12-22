@@ -1,0 +1,357 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f7f8fa; /* Light pastel background */
+  color: #333;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #f8c8d3; /* Soft pastel pink */
+  color: white;
+}
+
+.navbar h1 {
+  font-size: 1.5rem;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+}
+
+.navbar ul li {
+  cursor: pointer;
+}
+
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 2rem 1rem;
+  background: linear-gradient(to right, #a6c1ee, #f8d9e4); /* Pastel blue and pink gradient */
+  color: white;
+}
+
+.hero h1 {
+  font-size: 3rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin: 1rem 0;
+}
+
+.hero .cta-button {
+  padding: 0.8rem 2rem;
+  background-color: #f8c8d3; /* Soft pastel pink */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #f8c8d3; /* Soft pastel pink */
+  color: white;
+}
+/* Footer Styles */
+
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Adds spacing between the icons */
+  margin-bottom: 1rem;
+}
+
+.social-links a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+}
+
+.social-links a i {
+  margin-right: 8px; /* Spacing between the icon and text */
+}
+
+.footer p {
+  font-size: 0.9rem;
+  
+}
+
+/* Filters */
+.filters {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.filters select {
+  padding: 0.5rem;
+  background-color: #e8f4f8; /* Pastel blue */
+  border: 1px solid #d1e7f4;
+  border-radius: 5px;
+}
+
+/* Product Card */
+.product-card {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 1rem;
+  background-color: #ffffff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.product-card h3 {
+  margin: 1rem 0 0.5rem;
+}
+
+.product-card p {
+  margin: 0;
+}
+
+.product-card .price {
+  font-weight: bold;
+}
+
+.product-card button {
+  margin-top: 0.5rem;
+  padding: 0.5rem 1rem;
+  background-color: #a6c1ee; /* Pastel blue */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  .product-cards {
+    grid-template-columns: repeat(2, 1fr); /* 2 cards per row on medium screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .product-cards {
+    grid-template-columns: 1fr; /* 1 card per row on small screens */
+  }
+}
+.shop-page {
+  padding: 20px;
+  text-align: center;
+}
+
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-top: 20px;
+}
+
+.product-card {
+  border: 1px solid #ddd;
+  padding: 1rem;
+  background-color: #fff;
+  text-align: center;
+}
+
+.product-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.product-card h2 {
+  font-size: 1.5rem;
+  margin-top: 10px;
+}
+
+.product-card p {
+  font-size: 1rem;
+  color: #555;
+}
+
+.product-card span {
+  font-size: 1.25rem;
+  color: #e74c3c;
+  font-weight: bold;
+}
+
+/* About Page */
+.about {
+  text-align: center;
+  padding: 2rem;
+}
+
+.about h1 {
+  font-size: 2.5rem;
+}
+
+.about p {
+  font-size: 1.2rem;
+}
+
+/* Cart Page */
+.cart {
+  text-align: center;
+  padding: 2rem;
+}
+
+.cart .cta-button {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #f8c8d3; /* Soft pastel pink */
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* Contact Page */
+/* Ensure the contact form uses flexbox and stack items vertically */
+.contact-form {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  gap: 1rem; /* Space between items */
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+/* Make sure inputs and textarea are taking full width */
+.contact-form input, .contact-form textarea {
+  width: 100%; /* Ensures full width */
+  padding: 0.8rem;
+  border: 1px solid #d1e7f4; /* Pastel blue border */
+  border-radius: 5px;
+  box-sizing: border-box; /* Include padding in width calculation */
+}
+
+/* Button styling */
+.contact-form button {
+  padding: 0.8rem;
+  background-color: #a6c1ee; /* Pastel blue */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+/* Add styles for login form */
+.login-form {
+  margin: 20px;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 5px;
+  max-width: 400px;
+  margin: auto;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.login-form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #ff4f81;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.login-form button:hover {
+  background-color: #ff3366;
+}
+
+/* Logo in navbar */
+nav .logo a {
+  font-size: 1.8rem;
+  color: #ff4f81;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+nav ul li a:hover {
+  color: #ff4f81;
+}
+/* Product Card Styling */
+.product-section {
+  padding: 2rem;
+  text-align: center;
+}
+
+.product-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.product-card {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.product-card:hover {
+  transform: translateY(-10px);
+}
+
+.product-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.product-info {
+  margin-top: 1rem;
+}
+
+.product-info h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.product-info p {
+  color: #a6c1ee;
+  font-size: 1.1rem;
+}

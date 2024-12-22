@@ -1,0 +1,39 @@
+/* Home.css */
+.page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .hero {
+    background-color: #f9c1d9; /* Light pink */
+    padding: 80px 20px;
+    text-align: center;
+    flex-grow: 1; /* Ensures the hero section takes up available space */
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+    color: #ff5c8d;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    color: #444;
+  }
+  
+  .cta-button {
+    background-color: #ff5c8d;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: #ff2f5c;
+  }
+  

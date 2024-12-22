@@ -1,0 +1,53 @@
+/* Contact.css */
+.page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .hero {
+    background-color: #a2c2e3; /* Pastel blue background */
+    padding: 80px 20px;
+    text-align: center;
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+    color: #005c8d;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    color: #444;
+  }
+  
+  .contact-form {
+    padding: 20px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .contact-form button {
+    background-color: #ff5c8d; /* Pastel pink button */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 1.1rem;
+  }
+  
+  footer {
+    margin-top: auto;
+  }
+  
