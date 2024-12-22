@@ -1,0 +1,39 @@
+/* About.css */
+.page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .hero {
+    background-color: #f9c1d9; /* Light pink background */
+    padding: 80px 20px;
+    text-align: center;
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+    color: #ff5c8d;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    color: #444;
+  }
+  
+  .content {
+    padding: 20px;
+    background-color: #fff;
+    color: #444;
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+  
+  .content p {
+    margin-bottom: 20px;
+  }
+  
+  footer {
+    margin-top: auto;
+  }
+  
